@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="libs/accordion.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="fav/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="fav/favicon-16x16.png"
+    />
+    <link rel="manifest" href="fav/site.webmanifest" />
+  </head>
+  <body>
+    <header class="header ">
+      <div class="container header__container">
+        <button class="header__burger-btn" id="burger">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="https://aleksey1963.github.io/prob-mockup-pho/index.html" class="logo header__logo">
+          <img class="logo__img" src="img/logo_head.png" alt="Лого" />
+        </a>
+        <div class="header-right">
+          <nav class="header__nav">
+            <ul class="list-reset menu header__menu">
+              <li class="menu__item">
+                <a href="#" class="link-base menu__link">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a href="#hero" class="link-base menu__link">Заставка</a>
+              </li>
+              <li class="menu__item">
+                <a href="#services" class="link-base menu__link">Сайты</a>
+              </li>
+              <li class="menu__item">
+                <a href="#steps" class="link-base menu__link">Распорядок</a>
+              </li>
+              <li class="menu__item">
+                <a href="#clients" class="link-base menu__link">Клиенты</a>
+              </li>
+            </ul>
+          </nav>
+          <button id="open-modal-btn" class="btn-reset btn-base">
+            Открыть
+          </button>
+        </div>
+      </div>
+      <div class="modal" id="my-modal">
+        <div class="modal__box">
+          <button class="model__close-btn" id="close-my-modal-btn">
+            <svg
+              width="23"
+              height="25"
+              viewBox="0 0 23 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                fill="#333333"
+              />
+              <path
+                d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
+                fill="#333333"
+              />
+            </svg>
+          </button>
+          <img src="img/nav.jpg" alt="картинка" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero" id="hero">
+        <div class="container container__hero">
+          <ul class="list-reset hero_info-list">
+            <li
+              class="info-card hero__card"
+              style="background-image: url(img/1.jpg)"
+            >
+              <div class="info-card__content info-card__content_color">
+                <h3 class="title-h3 info-card__title">Мост Мира</h3>
+                <p class="desc info-card__desc">
+                  Мост Мира (груз. მშვიდობის ხიდი) — пешеходный мост через реку
+                  Куру в Тбилиси, Грузия. Соединяет улицу Ираклия II и парк
+                  Рике.Мост имеет 156-метровый стальной каркас, покрытый
+                  стеклом. Вся конструкция опирается на 4 опоры. Попасть на мост
+                  можно как с улицы Ираклия II и из парка Рике, так и с
+                  набережных бульваров.
+                </p>
+              </div>
+            </li>
+            <li
+              class="info-card hero__card"
+              style="background-image: url(img/2.jpg)"
+            >
+              <div class="info-card__content info-card__content_bw">
+                <h3 class="title-h3 info-card__title">Парк Рике</h3>
+                <p class="desc info-card__desc">
+                  Парк Рике (груз. რიყის პარკი — пески) — парк в Тбилиси, на
+                  левом берегу Куры. С востока парк ограничивают Подъём
+                  Бараташвили и Винный подъём.
+                </p>
+              </div>
+            </li>
+            <li
+              class="info-card hero__card"
+              style="background-image: url(img/3.jpg)"
+            >
+              <div class="info-card__content info-card__content_bottom-color">
+                <h3 class="title-h3 info-card__title">
+                  Часовая башня старого Тбилиси
+                </h3>
+                <p class="desc info-card__desc">
+                  Каждый час в сопровождении музыки, в верхней части башни, под
+                  самой крышей, открывается специальная дверка и появляется
+                  ангел с золотыми крыльями.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="container container__services">
+          <h2 class="subtitle subtitle_line">Сайты</h2>
+          <ul class="list-reset services__list">
+            <li class="service-card service-card__badge" data-badge="О т д а й">
+              <img src="img/4.jpg" alt="" class="service-card__img" />
+              <div class="service-card__right">
+                <div class="service-card__right-top">
+                  <h3 class="title-h3 service-card__title">
+                    <a
+                      href="https://aleksey1963.github.io/reimagined-my-slader/index.html"
+                      target="_blank"
+                      class="link-base service-card__link"
+                      >Грузия</a
+                    >
+                  </h3>
+                  <p class="desc service-card__desc">
+                    Грузия Тбилиси парк Рике Канатная дорога Парк Рике —
+                    Нарикала — одна из трёх канатных дорог в Тбилиси. февраль
+                    2023г.
+                  </p>
+                </div>
+                <div class="service-card__right-bottom">
+                  <button id="btn" class="btn-reset btn-base">Да</button>
+                  <button
+                    class="link-base btn-gray"
+                    onclick="window.location.href ='net.html';"
+                  >
+                    Нет
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <li class="service-card">
+              <img src="img/5.jpg" alt="" class="service-card__img" />
+              <div class="service-card__right">
+                <div class="service-card__right-top">
+                  <h3 class="title-h3 service-card__title">
+                    <a
+                      href="https://aleksey1963.github.io/steps-with-pictures/index.html"
+                      target="_blank"
+                      class="link-base service-card__link"
+                      >Катенок</a
+                    >
+                  </h3>
+                  <p class="desc service-card__desc">
+                    парк имени Максима Горького, Ейск, Краснодарский край
+                    Задумалась как подольше погулять
+                  </p>
+                </div>
+                <div class="service-card__right-bottom">
+                  <button id="btn1" class="btn-reset btn-base">Да</button>
+                  <button
+                    class="link-base btn-gray"
+                    onclick="window.location.href ='net.html';"
+                  >
+                    Нет
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <li class="service-card">
+              <img src="img/6.jpg" alt="" class="service-card__img" />
+              <div class="service-card__right">
+                <div class="service-card__right-top">
+                  <h3 class="title-h3 service-card__title">
+                    <a
+                      href="https://aleksey1963.github.io/bug-free-rooot-modal/index.html"
+                      target="_blank"
+                      class="link-base service-card__link"
+                      >Пушистик</a
+                    >
+                  </h3>
+                  <p class="desc service-card__desc">
+                    Шабановское — село в Северском районе Краснодарского края.
+                    Административный центр Шабановского сельского поселения.Сбор
+                    грибов.
+                  </p>
+                </div>
+                <div class="service-card__right-bottom">
+                  <button id="btn2" class="btn-reset btn-base">Да</button>
+                  <button
+                    class="link-base btn-gray"
+                    onclick="window.location.href ='net.html';"
+                  >
+                    Нет
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <li class="service-card">
+              <img src="img/7.jpg" alt="" class="service-card__img" />
+              <div class="service-card__right">
+                <div class="service-card__right-top">
+                  <h3 class="title-h3 service-card__title">
+                    <a
+                      href="https://aleksey1963.github.io/curly-rotary-phone/dom_index.html"
+                      target="_blank"
+                      class="link-base service-card__link"
+                      >Гуамское ущелье</a
+                    >
+                  </h3>
+                  <p class="desc service-card__desc">
+                    Гуамское ущелье (адыг. Гъуамэ) — узкое глубокое ущелье, в
+                    верховьях реки Курджипс. Ущелье расположено между хребтами
+                    Гуама и Лаго-Наки, резко обрываясь четырёхсотметровыми
+                    скалами к долине реки Курджипс.
+                  </p>
+                </div>
+                <div class="service-card__right-bottom">
+                  <button id="btn3" class="btn-reset btn-base">Да</button>
+
+                  <button
+                    class="link-base btn-gray"
+                    onclick="window.location.href ='net.html';"
+                  >
+                    Нет
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="steps" id="steps">
+        <div class="container container__steps">
+          <h2 class="subtitle subtitle_line">Распорядок дня</h2>
+        </div>
+        <div class="steps-black">
+          <div class="container">
+            <ul class="list-reset steps__list">
+              <li class="step-card step__list-item">
+                <p class="desc step-card__desc">
+                  Просыпайтесь в&nbsp;привычное время, устанавливая будильник на
+                  утро.
+                </p>
+              </li>
+              <li class="step-card step__list-item">
+                <p class="desc step-card__desc">
+                  После привычных утренних дел включайте&nbsp;ПК
+                  и&nbsp;начинайте работать.
+                </p>
+              </li>
+              <li class="step-card step__list-item">
+                <p class="desc step-card__desc">
+                  Если дома находятся люди, создайте себе отдельную рабочую
+                  зону.
+                </p>
+              </li>
+              <li class="step-card step__list-item">
+                <p class="desc step-card__desc">
+                  Уделяйте время на&nbsp;короткие перерывы для физических
+                  упражнений.
+                </p>
+              </li>
+              <li class="step-card step__list-item">
+                <p class="desc step-card__desc">
+                  Заканчивайте работу в&nbsp;привычное время, придерживаясь
+                  графика.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <div class="container faq__container">
+          <h2 class="subtitle subtitle_line">Вопросы по распорядку дня</h2>
+          <ul class="accordion faq__list list-reset">
+            <li class="faq__item ac">
+              <a href="#" class="ac-trigger faq__if">
+                <h3 class="ac-header faq__subtitle">
+                  Просыпайтесь в привычное время, устанавливая будильник на
+                  утро;
+                </h3>
+                <span class="faq__icon"></span>
+              </a>
+              <div class="ac-panel">
+                <p class="ac-text">
+                  Просыпайтесь, малыши! Вам открыты все пути. Просыпайтесь,
+                  малыши! Время&nbsp;&mdash; воплощать мечты. Зависит
+                  от&nbsp;тебя теперь &mdash; Каким он&nbsp;будет, новый день.
+                  Звонок. Будильник. Новый день. Пора, малыш! Вставай скорей!
+                  Нас ждут великие дела &mdash; Ведь солнце светит для тебя!
+                  Окно пошире распахни И&nbsp;воздух перемен вдохни. Зарядку
+                  сделать не&nbsp;забудь &mdash; И&nbsp;с&nbsp;песней начинай
+                  свой путь! Просыпайтесь, малыши! Вам открыты все пути.
+                  Просыпайтесь, малыши! Время&nbsp;&mdash; воплощать мечты.
+                  Зависит от&nbsp;тебя теперь &mdash; Каким он&nbsp;будет, новый
+                  день.
+                </p>
+                <p class="ac-text">
+                  Почистил зубы&nbsp;&mdash; причешись! Расправил
+                  плечи&nbsp;&mdash; улыбнись! Осанка ровная всегда Здоровью
+                  твоему нужна. На&nbsp;кухне&nbsp;&mdash; каша с&nbsp;молоком
+                  Согрета маминым теплом. Ты&nbsp;зарядился. Шаг вперед.
+                  И&nbsp;мир открытий тебя ждет! Просыпайтесь, малыши! Вам
+                  открыты все пути. Просыпайтесь, малыши! Время&nbsp;&mdash;
+                  воплощать мечты. Зависит от&nbsp;тебя теперь &mdash; Каким
+                  он&nbsp;будет, новый день.
+                </p>
+              </div>
+            </li>
+            <li class="faq__item ac">
+              <a href="#" class="ac-trigger faq__if">
+                <h3 class="ac-header faq__subtitle">
+                  После привычных утренних дел включайте ПК и начинайте
+                  работать;
+                </h3>
+                <span class="faq__icon"></span>
+              </a>
+              <div class="ac-panel">
+                <p class="ac-text">
+                  Вы, возможно, удивитесь, но&nbsp;включить ноутбук можно
+                  разными способами. Единственный верный
+                  из&nbsp;них&nbsp;&mdash; нажатие кнопки включения. Если
+                  вы&nbsp;ищете в&nbsp;Сети какой-то альтернативный способ,
+                  значит пора нести ноутбук в&nbsp;сервис-центр. Включать
+                  ноутбук рекомендуется, только если все компоненты лэптопа
+                  корректно установлены и&nbsp;работают, в&nbsp;противном случае
+                  велика вероятность, что ноутбук выйдет из&nbsp;строя.
+                  Например, неподключенный вентилятор может привести
+                  к&nbsp;критическому перегреву процессора.
+                </p>
+                <p class="ac-text">
+                  Рекомендуется поместить ноутбук на&nbsp;плоскую устойчивую
+                  рабочую поверхность (стол или специальная подставка), при этом
+                  избегайте мягких поверхностей&nbsp;&mdash; это может
+                  затруднить прохождение воздуха через вентиляционные отверстия,
+                  а&nbsp;ведь лэптопу нужно достаточное количество воздуха для
+                  собственного охлаждения. Во&nbsp;время работы некоторые части
+                  корпуса ноутбука могут значительно нагреваться, и&nbsp;это
+                  не&nbsp;всегда следствие неисправности.
+                </p>
+              </div>
+            </li>
+            <li class="faq__item ac">
+              <a href="#" class="ac-trigger faq__if">
+                <h3 class="ac-header faq__subtitle">
+                  Если дома находятся люди, создайте себе отдельную рабочую
+                  зону;
+                </h3>
+                <span class="faq__icon"></span>
+              </a>
+              <div class="ac-panel">
+                <p class="ac-text">
+                  Психологи и&nbsp;специалисты по&nbsp;управлению временем
+                  утверждают, что окружающая нас обстановка напрямую влияет
+                  на&nbsp;нашу способность концентрироваться и&nbsp;выполнять
+                  задачи. Беспорядок может отвлекать, а&nbsp;неудобное кресло
+                  или плохое освещение может утомлять и&nbsp;уменьшать
+                  работоспособность. Исследования показали, что обустроенное
+                  рабочее пространство способствует увеличению
+                  производительности на&nbsp;20-30%.
+                </p>
+                <p class="ac-text">
+                  Работа из&nbsp;дома может стереть границы между личным
+                  и&nbsp;профессиональным. Наличие четко определенного рабочего
+                  пространства помогает психологически отделить &laquo;время для
+                  работы&raquo; от&nbsp;&laquo;времени для отдыха&raquo;. Когда
+                  рабочий день заканчивается, вы&nbsp;физически покидаете
+                  рабочее место, что помогает переключиться. Если&nbsp;же
+                  рабочее пространство сливается с&nbsp;домашним, это может
+                  привести к&nbsp;переутомлению, стрессу и&nbsp;снижению
+                  эффективности. Создание чётких границ между рабочим
+                  и&nbsp;домашним пространствами сохраняет рабочую дисциплину,
+                  а&nbsp;после рабочего дня позволяет полноценно отдыхать
+                  и&nbsp;расслабляться.
+                </p>
+              </div>
+            </li>
+            <li class="faq__item ac">
+              <a href="#" class="ac-trigger faq__if">
+                <h3 class="ac-header faq__subtitle">
+                  Уделяйте время на короткие перерывы для физических упражнений;
+                </h3>
+                <span class="faq__icon"></span>
+              </a>
+              <div class="ac-panel">
+                <p class="ac-text">
+                  Повороты головы в&nbsp;сторону Это простое упражнение помогает
+                  расслабить шею, избавляет от&nbsp;сонливости и&nbsp;снимает
+                  усталость с&nbsp;глаз. 1. Сядьте на&nbsp;край стула, выпрямите
+                  спину. Руки поставьте на&nbsp;пояс. 2. Плавно поверните голову
+                  вправо. Вернитесь в&nbsp;исходное положение.
+                  Затем&nbsp;&mdash; поворот влево. 3. Сделайте
+                  по&nbsp;8&nbsp;поворотов в&nbsp;каждую сторону.
+                </p>
+                <p class="ac-text">
+                  Скручивания вперед Упражнения для борьбы с&nbsp;сутулостью. 1.
+                  Сядьте на&nbsp;край стула, ноги поставьте на&nbsp;ширине плеч.
+                  2. Сцепите руки в&nbsp;замок за&nbsp;головой. Локти смотрят
+                  в&nbsp;стороны. 3. Наклоните шею и&nbsp;округлите спину.
+                  Потянитесь локтями друг к&nbsp;другу. 4. Выпрямите спину
+                  и&nbsp;сведите лопатки. 5. Повторяйте упражнение
+                  10-12&nbsp;раз.
+                </p>
+                <p class="ac-text">
+                  Плечи вверх-вниз Из-за длительного сидения за&nbsp;компьютером
+                  часто устают плечи. Вот способ их&nbsp;расслабить: 1.
+                  Поднимите плечи вверх. Задержитесь в&nbsp;этом положении
+                  на&nbsp;15&nbsp;секунд. 2. Опустите плечи вниз. 3. Повторите
+                  упражнение 3&nbsp;раза.
+                </p>
+                <p class="ac-text">
+                  &laquo;Далеко-близко&raquo; Это упражнение для профилактики
+                  близорукости. 1. Подойдите к&nbsp;окну. 2. Вытяните руку перед
+                  собой и&nbsp;сфокусируйте взгляд на&nbsp;указательном пальце.
+                  3. А&nbsp;теперь переведите взгляд вдаль. Например,
+                  на&nbsp;дом напротив. 4. Повторяйте упражнение 6-8&nbsp;раз.
+                </p>
+                <p class="ac-text">
+                  Моргание Если проводить за&nbsp;компьютером много времени,
+                  может возникнуть сухость в&nbsp;глазах. Чтобы справиться
+                  с&nbsp;ней, достаточно быстро поморгать 1-2&nbsp;минуты.
+                </p>
+                <p class="ac-text">
+                  &laquo;Большие глаза&raquo; Зрение часто портится из-за
+                  перенапряжения. Чтобы расслабить глаза, можно сделать это
+                  упражнение: 1. Крепко зажмурьте глаза на&nbsp;5-7 секунд 2.
+                  Широко откройте глаза на&nbsp;3-5&nbsp;секунд. 3. Повторите
+                  упражнение 6-8&nbsp;раз.
+                </p>
+              </div>
+            </li>
+            <li class="faq__item ac">
+              <a href="#" class="ac-trigger faq__if">
+                <h3 class="ac-header faq__subtitle">
+                  Заканчивайте работу в привычное время, придерживаясь графика.
+                </h3>
+                <span class="faq__icon"></span>
+              </a>
+              <div class="ac-panel">
+                <p class="ac-text">
+                  График работы является обязательным условием для выполнения
+                  работы в&nbsp;хорошо организованной манере. Большинство
+                  работодателей составляют графики работы, которые направлены
+                  на&nbsp;снижение затрат на&nbsp;рабочую силу и&nbsp;получение
+                  максимального объема работы, выполненной за&nbsp;отведенное
+                  время. Когда вы&nbsp;работаете в&nbsp;срок, график работы
+                  является ценной структурой, которая обеспечивает соблюдение
+                  срока. Работая каждый день в&nbsp;направлении поставленной
+                  цели, проект становится управляемым и&nbsp;более легко
+                  достижимым.
+                </p>
+                <p class="ac-text">
+                  Работая в&nbsp;заранее установленное время, вы&nbsp;можете
+                  расставить приоритеты в&nbsp;работе, которая должна быть
+                  выполнена. В&nbsp;некоторых ситуациях работодатели будут точно
+                  указывать, какие задачи необходимо выполнить в&nbsp;течение
+                  смены. График работы важен для поддержания баланса между
+                  жизнью и&nbsp;работой. Это особенно актуально для тех, кто
+                  работает из&nbsp;дома, поскольку зачастую трудно оторваться
+                  от&nbsp;работы и&nbsp;сосредоточиться на&nbsp;семье, друзьях
+                  и&nbsp;личном времени. Стресс является неизбежной частью
+                  работы и&nbsp;жизни. Тем не&nbsp;менее, создание рабочего
+                  графика может помочь вам установить четкие временные рамки
+                  и&nbsp;позволить вам оставить свою работу на&nbsp;рабочем
+                  месте.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="clients" id="clients">
+        <div class="container container__clients">
+          <h2 class="subtitle subtitle_line">Клиенты</h2>
+
+          <ul class="list-reset clients__list">
+            <li class="client-card">
+              <a
+                href="https://ru.wikipedia.org/wiki/%D0%A3%D1%82%D0%BA%D0%B8"
+                target="_blank"
+                class="client-card__link"
+                style="background-image: url(img/companies/1.png)"
+              >
+              </a>
+            </li>
+            <li class="client-card">
+              <a
+                href="https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D1%80%D0%BE%D0%BD"
+                target="_blank"
+                class="client-card__link"
+                style="background-image: url(img/companies/2.png)"
+              >
+              </a>
+            </li>
+            <li class="client-card">
+              <a
+                href="https://ru.wikipedia.org/wiki/%D0%9E%D0%B1%D1%8B%D0%BA%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D0%B1%D0%B5%D0%BB%D0%BA%D0%B0"
+                class="client-card__link"
+                target="_blank"
+                style="background-image: url(img/companies/3.png)"
+              >
+              </a>
+            </li>
+            <li class="client-card">
+              <a
+                href="https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D0%BB%D1%8C%D1%84%D0%B8%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5"
+                target="_blank"
+                class="client-card__link"
+                style="background-image: url(img/companies/4.png)"
+              >
+              </a>
+            </li>
+            <li class="client-card">
+              <a
+                href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0"
+                target="_blank"
+                class="client-card__link"
+                style="background-image: url(img/companies/5.png)"
+              >
+              </a>
+            </li>
+            <li class="client-card">
+              <a
+                href="https://ru.wikipedia.org/wiki/%D0%9F%D1%87%D1%91%D0%BB%D1%8B"
+                target="_blank"
+                class="client-card__link"
+                style="background-image: url(img/companies/6.png)"
+              >
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__block footer__left">
+          <a href="logo.html" class="footer__logo">
+            <img class="logo__img" src="img/logo_foot.png" alt="Лого" />
+          </a>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Главная</a>
+            </li>
+            <li class="footer__item">
+              <a href="#hero" class="footer__link">Заставка</a>
+            </li>
+            <li class="footer__item">
+              <a href="#services" class="footer__link">Сайты</a>
+            </li>
+            <li class="footer__item">
+              <a href="#steps" class="footer__link">Распорядок</a>
+            </li>
+            <li class="footer__item">
+              <a href="#clients" class="footer__link">Клиенты</a>
+            </li>
+            <li class="footer__item">
+              <a href="cart.html" class="footer__link">Контакты</a>
+            </li>
+            <li class="footer__item">
+              <a href="https://skalolaskovy.ru/prikols/597-drinking-buddies-agreement" class="footer__link">Партнёрское соглашение</a>
+            </li>
+          </ul>
+          <ul class="footer__social">
+            <li class="footer__social-icon">
+              <a
+                href="https://ok.ru/"
+                target="_blank"
+                aria-label="Иконка мы в Однокласниках"
+                class="social-icon"
+              >
+                <svg
+                  width="60"
+                  height="60"
+                  viewBox="0 0 60 60"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M25.7054 19.9812C25.7054 22.4546 27.7105 24.4598 30.1838 24.4598C32.6572 24.4598 34.6623 22.4546 34.6623 19.9812C34.6623 17.5079 32.6572 15.5028 30.1838 15.5028C27.7105 15.5028 25.7054 17.5079 25.7054 19.9812Z"
+                    fill="#666666"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M30 60C46.5686 60 60 46.5685 60 30C60 13.4315 46.5686 0 30 0C13.4314 0 0 13.4315 0 30C0 46.5685 13.4314 60 30 60ZM19.35 19.9811C19.35 13.9978 24.2004 9.14729 30.1838 9.14729C36.1673 9.14729 41.0176 13.9978 41.0176 19.9811C41.0176 25.9645 36.1673 30.8154 30.1838 30.8154C24.2004 30.8154 19.35 25.9645 19.35 19.9811ZM41.0823 36.3881C40.9448 36.4983 38.3457 38.5522 34.0085 39.4358L40.5554 45.9243C41.7067 47.0738 41.7081 48.9389 40.5586 50.0902C39.4091 51.2414 37.5444 51.2432 36.3927 50.0935L30.0368 43.904L24.2639 50.0536C23.6859 50.6532 22.9149 50.9547 22.1431 50.9547C21.407 50.9547 20.6703 50.6808 20.0986 50.1296C18.9274 49.0003 18.8935 47.1355 20.0228 45.9643L26.2369 39.4701C21.7782 38.6073 19.0718 36.4998 18.9324 36.3881C17.6633 35.3702 17.4594 33.5163 18.4772 32.247C19.4949 30.9778 21.3487 30.7739 22.6182 31.7916C22.645 31.8133 25.4756 33.9398 30.0366 33.9429C34.5977 33.9398 37.3698 31.8133 37.3966 31.7916C38.666 30.7739 40.5198 30.9778 41.5375 32.247C42.5553 33.5163 42.3515 35.3702 41.0823 36.3881Z"
+                    fill="#666666"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-icon">
+              <a
+                href="https://vk.com/"
+                target="_blank"
+                aria-label="Иконка мы в Контакте"
+                class="social-icon"
+              >
+                <svg
+                  width="60"
+                  height="60"
+                  viewBox="0 0 60 60"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M30 0C13.432 0 0 13.4314 0 30C0 46.5686 13.432 60 30 60C46.568 60 60 46.5686 60 30C60 13.4314 46.568 0 30 0ZM45.2176 33.2446C46.6159 34.6103 48.0951 35.8957 49.3504 37.4026C49.9065 38.0692 50.4307 38.7585 50.8297 39.5337C51.3993 40.6392 50.8849 41.8515 49.8954 41.9171L43.7494 41.9159C42.162 42.0473 40.8988 41.4071 39.8339 40.3218C38.9837 39.457 38.195 38.5332 37.3762 37.6389C37.0416 37.2718 36.6893 36.9262 36.2695 36.6543C35.4316 36.1093 34.7036 36.2762 34.2236 37.1515C33.7344 38.0421 33.6227 39.0292 33.5761 40.0205C33.5092 41.4697 33.0721 41.8484 31.618 41.9165C28.5109 42.062 25.5628 41.5906 22.8227 40.0241C20.4055 38.6425 18.5346 36.6924 16.9043 34.4845C13.7297 30.1805 11.2984 25.4566 9.11386 20.597C8.6222 19.5026 8.98189 18.917 10.1893 18.8943C12.1952 18.8557 14.2011 18.8606 16.2071 18.8925C17.0234 18.9054 17.5636 19.3725 17.8772 20.1428C18.9612 22.8098 20.2901 25.3473 21.9554 27.7007C22.3992 28.3274 22.8522 28.9522 23.4973 29.3948C24.2093 29.8834 24.7519 29.7219 25.0877 28.9271C25.3025 28.4219 25.3952 27.8817 25.4418 27.3404C25.6014 25.486 25.6205 23.6323 25.3442 21.7854C25.1724 20.6296 24.5224 19.8832 23.3702 19.6647C22.7834 19.5536 22.8694 19.3363 23.1548 19.0011C23.6501 18.4217 24.1142 18.0632 25.0416 18.0632L31.9857 18.062C33.0801 18.2768 33.3256 18.7679 33.4742 19.8703L33.4803 27.5871C33.4674 28.0137 33.6945 29.2782 34.4606 29.5574C35.0744 29.76 35.4795 29.2677 35.8465 28.8792C37.5118 27.112 38.6983 25.0263 39.7608 22.8675C40.2298 21.9155 40.6343 20.9303 41.0271 19.9433C41.3193 19.2135 41.7735 18.8544 42.5972 18.8667L49.2841 18.8747C49.4811 18.8747 49.6812 18.8765 49.8764 18.9103C51.0034 19.103 51.3121 19.5879 50.9635 20.6873C50.4147 22.4145 49.3485 23.8533 48.3063 25.2958C47.1892 26.8401 45.9977 28.3304 44.8917 29.8815C43.8752 31.2994 43.9556 32.0133 45.2176 33.2446Z"
+                    fill="#666666"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__block footer__center">
+          <h2 class="subtitle footer__title">Oставить заявку</h2>
+          <form
+            action="https://jsonplaceholder.typicode.com/posts"
+            method="post"
+          >
+            <div class="footer__form">
+              <label>
+                <span class="visually-hidden">
+                  Введите Фамилию имя отчество
+                </span>
+                <input
+                  class="footer__input"
+                  type="text"
+                  name="name"
+                  placeholder="Фамилия, имя и отчество"
+                  required
+                />
+              </label>
+              <label>
+                <span class="visually-hidden">
+                  Введите адрес электронной почты
+                </span>
+                <input
+                  class="footer__input"
+                  type="email"
+                  name="email"
+                  placeholder="Email*"
+                  required
+                />
+              </label>
+              <label>
+                <span class="visually-hidden"> Введите cообщение </span>
+                <textarea
+                  class="footer__input footer__textarea"
+                  name="comment"
+                  placeholder="Сообщение"
+                ></textarea>
+              </label>
+            </div>
+            <button class="btn-reset footer__btn" type="submit">
+              Отправить данные
+            </button>
+          </form>
+        </div>
+        <div class="footer__block footer__right">
+          <p class="footer__text">
+            
+            Приходит программист к&nbsp;другу&mdash;пианисту&nbsp;&mdash; посмотреть на&nbsp;новый рояль. Долго ходит вокруг, хмыкает, потом заявляет:
+&mdash;&nbsp;Клава неудобная&nbsp;&mdash; всего 84&nbsp;клавиши, половина функциональных, ни&nbsp;одна не&nbsp;подписана; хотя... шифт нажимать ногой&nbsp;&mdash; оригинально...
+Мой начальник зовет меня Компьютером. И&nbsp;я&nbsp;как-то узнал, что это не&nbsp;из-за интеллекта, а&nbsp;потому, что если меня не&nbsp;трогать 15&nbsp;минут, то&nbsp;я&nbsp;засыпаю.
+            
+            
+            
+            
+          </p>
+        </div>
+
+        <figure class="footer__bottom">
+          <a href="img/2foto.jpeg" class="logo footer__logo">
+            <img class="foo" src="img/logo_footer.svg" alt="Лого" />
+          </a>
+        </figure>
+      </div>
+      <script src="libs/accordion.min.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/popul.js"></script>
+    </footer>
+  </body>
+</html>
